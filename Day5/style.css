@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body,
+section,
+img,
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(images/bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 300px));
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
+  column-gap: 20px;
+}
+.wrapper > img {
+  display: block;
+}
+
+section.ground {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 10px 20px;
+  background-color: #93572e;
+
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: 0px 10px 0px -2px #4a260b;
+}
+
+section.ground .animal_name {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+
+section.ground .content {
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(255, 255, 255, 0.7);
+  font-family: "Roboto", sans-serif;
+}
+
+.up {
+  margin-bottom: 300px;
+}
